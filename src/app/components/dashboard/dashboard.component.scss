@@ -1,0 +1,89 @@
+.profile_container {
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadein 2.25s ease-in-out; 
+    border-top: 1px solid #00ff9b;
+    &_image {
+      
+        object-fit: contain;
+        align-self: flex-start;
+        border-radius: 50% !important;
+        padding: 0.25rem;
+        background-color: #fff;
+        border: 1px solid #00ff9b;
+        border-radius: 0.25rem;
+        max-width: 100%;
+        height: auto;
+        margin-right: 2rem;
+
+        
+    }
+    &_text {
+        flex: 1 1 auto;
+        display: inline;
+        display: block;
+        overflow: hidden;
+        margin-left: 2rem;
+
+    }
+}
+
+.btndiv {
+    display: flex;
+    flex-flow: column;
+    width: 80%;
+    align-items: center;
+    animation: slidedown 2s ease-in-out;
+  }
+
+  .btnprofile {
+    background-color: #00ff9b;
+    padding: 1rem;
+    border-radius: 2rem;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 2rem rgba(0, 0, 255, 0.1);
+    animation: fadein 2s ease-in-out;
+  
+    &:hover {
+      background: linear-gradient(to right, #03a9f4, #00ff9b);
+    }
+  
+    &::placeholder {
+      color: #39437a;
+      font-size: 0.9rem;
+    }
+  }
+
+@media screen and (max-width:990px) {
+ 
+    
+    
+    .profile_container { 
+        flex-wrap: wrap;
+          
+    }
+    div:first-child { 
+        flex-basis: 100%;
+        justify-content: center;
+        align-self: center; 
+    }
+
+    .profile_container_image {
+        margin-bottom: 0.30rem;
+        margin-right: 0rem;
+        animation: fadein 2.25s ease-in-out;
+    }
+
+    .profile_container_text{
+        margin-top: 0.30rem;
+        margin-left: 0rem;
+        animation: fadein 2.25s ease-in-out;
+    }
+  }

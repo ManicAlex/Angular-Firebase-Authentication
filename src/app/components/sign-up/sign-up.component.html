@@ -1,0 +1,46 @@
+
+  <div class="main__container">
+    <div class="main-card">
+  
+      <main class="main-content">
+        <span class="main-header">Join Us!</span>
+        <!-- signup form -->
+
+
+        <div class="formGroup"></div>
+        
+
+        <div class="formGroup">
+          <input type="email" class="formControl" placeholder="Email Address" #userEmail required>
+        </div>
+  
+        <div class="formGroup">
+          <input type="password" class="formControl" placeholder="Password" #userPwd required>
+        </div>
+  
+        <div class="formGroup">
+          <input type="button" class="btnPrimary" value="Sign Up" (click)="authService.SignUp(userEmail.value, userPwd.value)">
+        </div>
+ 
+        <!-- Continue with Google -->
+        <div class="formGroup">
+         <button type="button" class="btnPrimary" (click)="authService.GoogleAuth()">
+         <i class="fab fa-google-plus-g"></i> Continue with Google</button>
+         </div>
+
+        <div class="link-wrapper">
+          <span class="notice">Already have an account?</span>
+          <a class="link" routerLink="/sign-in">Login</a>
+        </div>
+  
+      </main>
+  
+      <!-- side image of card -->
+      <aside class="aside">
+        <div class="aside-overlay"></div>
+        <h1 class="aside-text">Create your free account today!</h1>
+        <hr class="aside-hr">
+      </aside>
+    </div>
+  </div>
+  

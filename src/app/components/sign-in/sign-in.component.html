@@ -1,0 +1,49 @@
+
+  <div class="main__container">
+    <div class="main-card">
+  
+      <main class="main-content">
+        <span class="main-header">Login</span>
+        <!-- signin form -->
+        
+        <div class="formGroup">
+          <input type="text" class="formControl" placeholder="Username" #userName required>
+        </div>
+  
+        <div class="formGroup">
+          <input type="password" class="formControl" placeholder="Password" #userPassword required>
+        </div>
+  
+        <div class="formGroup">
+          <input type="button" class="btnPrimary" value="Log in" (click)="authService.SignIn(userName.value, userPassword.value)">
+        </div>
+
+        <!-- login with Google -->
+        <div class="formGroup">
+         <button type="button" class="btnPrimary" (click)="authService.GoogleAuth()">
+         <i class="fab fa-google-plus-g"></i>Login with Google</button>
+         </div>
+
+         
+         <div class="link-wrapper">
+          <a class="link" routerLink="/forgot-password">Forgot Password?</a>
+        </div>
+
+
+
+        <div class="link-wrapper">
+          <span class="notice">Don't have an account?</span>
+          <a class="link" routerLink="/register-user">Sign Up</a>
+        </div>
+  
+      </main>
+  
+      <!-- linking to signup -->
+      <aside class="aside-login">
+        <div class="aside-overlay"></div>
+        <h1 class="aside-text">Welcome Back!</h1>
+        <hr class="aside-hr">
+      </aside>
+    </div>
+  </div>
+  

@@ -1,0 +1,30 @@
+
+  <div class="main__container">
+    <div class="main-card">
+  
+      <main class="main-content">
+        <span class="main-header">User Profile</span>
+        <div class="profile_container" *ngIf="authService.userData as user">
+          
+            
+              <img class="profile_container_image" src="{{(user.photoURL) ? user.photoURL : '/assets/default.png'}}"
+                alt="{{user.displayName}}">
+              <div class="profile_container_text">
+                <h1 class="text-center">Hello: <strong>{{(user.displayName) ? user.displayName : 'User'}}</strong></h1>
+                <p class="text-center">User ID: <strong>{{user.uid}}</strong></p>
+                <p class="text-center">Email: <strong>{{user.email}}</strong></p>
+                <p class="text-center">Email Verified: <strong>{{user.emailVerified}}</strong></p>
+              </div>
+            
+        </div>
+
+        <div class="btndiv">
+         <button type="button" class="btnprofile" (click)="authService.SignOut()">
+         <i></i>Sign Out</button>
+         </div>
+  
+  
+      </main>
+  
+    </div>
+  </div>
