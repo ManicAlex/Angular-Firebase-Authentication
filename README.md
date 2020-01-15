@@ -1,32 +1,22 @@
 # DXProject
 
-This project is a 0auth system made from angularJs with the angularFire auth library connected to the firebase hosting/authentication.
+This project is a 0auth system made from angularJs with the [AngularFire](https://github.com/angular/angularfire) library connected to the [Firebase](https://firebase.google.com/) hosting/authentication.
 
 It provides a register, login, password reset, verify email, authguards, google account (sign-up/login)and a basic user profile that displays some of the users details from the database.  
 
+It can be view live @ [DX-project](https://dx-auth-assessment.firebaseapp.com/)
+
+[AngularFire](https://github.com/angular/angularfire)
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.2.
 
-## Development server
+## Install and Run
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+*Do a git clone of the repositories for Angular-Firebase-Authentication
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+*`npm install`
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-"# Oauth_angular" 
+*Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`
