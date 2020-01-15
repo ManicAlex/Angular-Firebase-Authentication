@@ -18,5 +18,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 *`npm install`
 
+Firebase connection details removed for security reasons. In order for project to work you must set up your own firebase and add the details preovide their to environments files.
+
 
 *Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`
