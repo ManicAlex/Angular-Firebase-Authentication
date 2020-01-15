@@ -1,5 +1,9 @@
 # DXProject
 
+This project is a 0auth system made from angularJs with the angularFire auth library connected to the firebase hosting/authentication.
+
+It provides a register, login, password reset, verify email, authguards, google account (sign-up/login)and a basic user profile that displays some of the users details from the database.  
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.2.
 
 ## Development server
